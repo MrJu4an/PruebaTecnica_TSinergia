@@ -6,7 +6,7 @@ export const pacienteSchema = yup.object().shape({
   numero_documento: yup
     .string()
     .matches(/^\d+$/, 'Número de documento debe contener solo números')
-    .min(4, 'Numero de documento debe tener al menos 3 caracteres')
+    .min(4, 'Numero de documento debe tener al menos 4 caracteres')
     .required('Número de documento es obligatorio'),
 
   nombre1: yup
