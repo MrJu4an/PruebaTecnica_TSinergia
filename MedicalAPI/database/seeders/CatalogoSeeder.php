@@ -43,13 +43,6 @@ class CatalogoSeeder extends Seeder
             ['id' => 2, 'nombre' => 'Tarjeta de Identidad'],
         ]);
 
-        // Usuario administrador
-        DB::table('users')->insert([
-            'name' => 'Administrador',
-            'email' => 'admin@example.com',
-            'password' => Hash::make('1234567890'),
-        ]);
-
         // Géneros básicos
         DB::table('genero')->insertOrIgnore([
             ['id' => 1, 'nombre' => 'Masculino'],
